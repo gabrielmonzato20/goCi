@@ -1,5 +1,7 @@
 package main
 
+import "testing"
+
 func TestSoma(t *testing.T){
   total := Soma(10,100)
   if total != 110{
