@@ -16,9 +16,7 @@ jobs:
         with:
           go-version: ${{matrix.go}}
       
-      -name: run the test    
       -run: go test
-      -name: run the application
       -run: go run math.go
 
       -name: set up QMUE
