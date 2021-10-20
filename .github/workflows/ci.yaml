@@ -15,10 +15,11 @@ jobs:
       - uses:  actions/setup-go@v2
         with:
           go-version: ${{matrix.go}}
+      
       -name: run the test    
-      - run: go test
+      -run: go test
       -name: run the application
-      - run: go run math.go
+      -run: go run math.go
 
       -name: set up QMUE
       -uses: docker/setup-qemu-action@v1
